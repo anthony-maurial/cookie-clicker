@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>cookie-clicker</title>
+</head>
+<body>
+    <div class="left">
+        <img id="cookie" draggable="false" onclick="increaseCookie()" src="cookie.png" alt="">
+    </div>
+    <div class="middle">
+        <div class="counter" id="counter"></div>
+    </div>
+    <div class="right">
+        <div id="upgrades">
+            <h1 class="title">upgrade</h1>
+            <button class="upgrade" id="start" onclick="buyUpgrade(15000, this, 2)">click auto(cost <span>15000</span> cookie)</button>
+            <button class="upgrade" onclick="buyUpgrade(1, this, 1)">+1 Cookie/click(cost <span>75</span> cookie)</button>
+            <button class="upgrade" onclick="buyUpgrade(5, this, 1)">+5 Cookies/click(cost <span>300</span> cookie)</button>
+            <button class="upgrade" onclick="buyUpgrade(10, this, 1)">+10 Cookie/click(cost <span>550</span> cookie)</button>
+            <button class="upgrade" onclick="buyUpgrade(20, this, 1)">+20 Cookies/click(cost <span>1000</span> cookie)</button>
+            <button class="upgrade" onclick="buyUpgrade(50, this, 1)">+50 Cookie/click(cost <span>2000</span> cookie)</button>
+            <button class="upgrade" onclick="buyUpgrade(100, this, 1)">+100 Cookies/click(cost <span>3500</span> cookie)</button>
+            <button class="upgrade" onclick="buyUpgrade(200, this, 1)">+200 Cookie/click(cost <span>6000</span> cookie)</button>
+            <button class="upgrade" onclick="buyUpgrade(500, this, 1)">+500 Cookies/click(cost <span>13000</span> cookie)</button>
+          </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
